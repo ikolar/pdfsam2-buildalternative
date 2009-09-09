@@ -1,0 +1,28 @@
+Unofficial bash script that builds the enhanced version of
+pdfsam (pdf split and merge)
+
+Run like this:
+ $ bash build.sh
+
+It will:
+ 1. download the source zip
+ 2. extract, twice*
+ 3. compile everything to out/
+ 4. copy non-class resources to out/ as well
+ 5. build a jar
+ 6. copy it and the dependencies to dist/
+ 7. run a test (ConsoleClient -version)
+ 8. leave a README in dist/ with an example 
+ 9. clean up behind itself
+
+Licensed under the EU Public License. For non-EU nationals, this means either GPL2 or BSD.
+
+Feel free to modify, improve, w/ever.
+
+Comments to igor.kolar@gmail.com .
+
+-i
+
+
+
+* there be zip files inside the src zip file
